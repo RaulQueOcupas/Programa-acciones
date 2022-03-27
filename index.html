@@ -3,15 +3,22 @@
 <head>
 				<meta charset="UTF-8">
 				<title>Título de la página</title>
-</he                           <meta name="viewport".content="width=device-width,initial-scale=1.0">
+				<style>
+								button{
+												background:grey;
+												font-size:15px;
+												color:white;
+								}
+				</style>
+</head>
 <body>
-				<h2>Area de cupones y llamadas (verificacion))</h2>
-				
+				<h1>Area de cupones y llamadas + pedidos (verificacion))</h1>
+				<h1 class="crecerboton">
 				<center>
 				<button onclick="cupones()">Verificar existencia </button>
 					<button onclick="llamadas()">Llamadas entrantes </button>
 				</center>
-				
+				</h1>
 				<script>
 								function cupones (){
 								var negocio1="Lerdo de Tejada 136, <br>20, <br>Sin vigencia";
@@ -54,7 +61,7 @@ confirm (bussines+"\nEl negocio no existe o esta registrado aun con nosotros, (S
 			
 								}
 								
-								
+						
 													function llamadas (){
 									var negocio1="Lerdo de Tejada 136, <br>20, <br>Sin vigencia";
 
@@ -101,48 +108,82 @@ alert ("ok");
 
 								
 								}
+								
 				</script>
+				
+				<br><br><br><br><br>
+				<select><option>Ver códigos gastados</option>
+				<option>
 				<h1>
 								219
 
 El codigo es correcto validado 1 vez
+</option>
+	<option>
 
 <br><br>218
 
 El codigo es correcto validado 1 vez
+</option>
 
-<br><br>
+<br><br>	<option>
 213
 
 El codigo es correcto validado 1 vez
 
-
+</option>
 
 
 				</h1>
 				
 				<br><br>
 				<h1>
+									<option>
 								201
 
 El codigo es correcto validado 1 vez
 
-
+</option>
 				</h1>
 				
 				<h1>
-								<br><br>
+								<br><br>	<option>
 								202
 
 El codigo es correcto validado 1 vez
+	</option>
 <br><br>
-
+	<option>
 208
 
 El codigo es correcto validado 1 vez
 
-
+	</option>
 
 				</h1>
+				
+				</option>
+				
+				<option>Otro código no disponible en la lista</option>
+				</select>
+				<script type="text/javascript">
+								function nuevopedido (){
+								
+						aceptar	=confirm("Hay un nuevo pedido disponible, lo aceptas?");
+						
+						if(aceptar==true){
+						alert ("A continuación se te dirije a realizar el servicio,( debes recoger unas bufandas) cuando las allas recogido avisanos por WhatsApp para enviarte la dirección donde entregaras");
+						window.location.href = "https://maps.app.goo.gl/2h8LwbFGi3HaMG1U7";
+						}
+						
+				else {
+				alert ("Entendido, sabemos que tienes alguna otra cosa por hacer, no te preocupes pasaremos el pedido a alguien mas.");
+				}		   
+}
+setTimeout (nuevopedido,2000);
+</script>
+
+
+				
 </body>
 </html>
