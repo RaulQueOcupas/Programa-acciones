@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+				<meta charset="UTF-8">
+				<title>Título de la página</title>
+</head>
+<body>
+				<h2>Area de cupones y llamadas (verificacion))</h2>
+				
+				<center>
+				<button onclick="cupones()">Verificar existencia </button>
+					<button onclick="llamadas()">Llamadas entrantes </button>
+				</center>
+				
+				<script>
+								function cupones (){
+								var negocio1="Lerdo de Tejada 136, <br>20, <br>Sin vigencia";
+
+	var negocio2="Independencia 54<br>20<br>Sin vigencia";
+                   
+                    bussines=prompt ("Ingresa el número de teléfono del negocio para obtener información");
+
+       if (bussines==3781202202){
+     confirm (bussines+"\n Si existe entre nuestros negocios afiliados\n"+negocio1);
+}
+ if (bussines==3787819044){
+     confirm(bussines+"\n Si existe entre nuestros negocios afiliados\n"+negocio2);
+}
+
+else {
+confirm (bussines+"\nEl negocio no existe o esta registrado aun con nosotros, (Si validas un cupon asegurate de que no aparezca este mensaje, de lo contrario el negocio quiere hacer fraude)");
+}
+				        cup=prompt("Ingresa el codigo del cupon");
+				        
+				        if (cup>=201 && cup<=244){
+				        				alert (cup+"\tEl codigo es correcto validado 1 vez");
+				      document.write (cup+"\t<h1>El codigo es correcto validado 1 vez</h1> ");
+				        }
+				        if (cup==219){
+				        confirm ("Este codigo esta intentando ser duplicado en un negocio donde no se ha enviado de nuevo o no esta inscrito a participar de este código>>\nIndependencia 53 intenta llamar al neg01 y preguntar si ellos movieron su cupon de lugar, informa que alguuen quiere usarlo en su nombre e implica inactivar el que ellos pueden tener si no lo pasaron.");
+				        }
+				        
+				           if (cup==218){
+				        confirm ("Este codigo esta intentando ser duplicado en un negocio donde no se ha enviado de nuevo o no esta inscrito a participar de este código>>\nIndependencia 53 intenta llamar al neg01 y preguntar si ellos movieron su cupon de lugar, informa que alguuen quiere usarlo en su nombre e implica inactivar el que ellos pueden tener si no lo pasaron.");
+				        }
+				           if (cup==213){
+				        confirm ("Este codigo esta intentando ser duplicado en un negocio donde no se ha enviado de nuevo o no esta inscrito a participar de este código>>\nIndependencia 53 intenta llamar al neg01 y preguntar si ellos movieron su cupon de lugar, informa que alguuen quiere usarlo en su nombre e implica inactivar el que ellos pueden tener si no lo pasaron.");
+				        }
+								
+								else {
+								alert ("El codigo no existe o es valido");
+								}
+								
+			
+								}
+								
+								
+													function llamadas (){
+									var negocio1="Lerdo de Tejada 136, <br>20, <br>Sin vigencia";
+
+	var negocio2="Independencia 54<br>20<br>Sin vigencia";
+                   
+                    bussines=prompt ("Ingresa el número de teléfono de llamada entrante para obtener información");
+
+       if (bussines==3781202202){
+     confirm (bussines+"\n Si existe entre nuestros # afiliados\n"+negocio1);
+}
+ if (bussines==3787819044){
+     confirm(bussines+"\n Si existe entre nuestros # afiliados\n"+negocio2);
+}
+
+else {
+confirm (bussines+"\nEl # no existe o esta registrado aun con nosotros.");
+}
+registronew=prompt("¿Desea registrarlo?si -no");
+
+if (registronew="si"){
+datos1=prompt("Ingrese si es negocio o particular");
+document.write (datos1+"<br>");
+
+datos2=prompt("Ingrese que se recibe");
+document.write (datos2+"<br>");
+
+datos3=prompt("Ingrese dirección donde se recibe");
+document.write (datos3+"<br>");
+
+datos4=prompt("Ingrese a donde se envia");
+document.write (datos4+"<br>");
+
+datos5=prompt("Ingrese cuanto se paga (si hay que hacerlo solamente)");
+document.write (datos5+"<br>");
+
+datos6=prompt("Ingrese si ya esta encargado el producto (solo en caso de que sea producto y persona particular quien solicita el servicio)");
+document.write (datos2+"<br>");
+
+}
+if (registronew="no") {
+alert ("ok");
+}
+				
+
+								
+								}
+				</script>
+				<h1>
+								219
+
+El codigo es correcto validado 1 vez
+
+<br><br>218
+
+El codigo es correcto validado 1 vez
+
+<br><br>
+213
+
+El codigo es correcto validado 1 vez
+
+
+
+
+				</h1>
+				
+				<br><br>
+				<h1>
+								201
+
+El codigo es correcto validado 1 vez
+
+
+				</h1>
+				
+				<h1>
+								<br><br>
+								202
+
+El codigo es correcto validado 1 vez
+<br><br>
+
+208
+
+El codigo es correcto validado 1 vez
+
+
+
+				</h1>
+</body>
+</html>
